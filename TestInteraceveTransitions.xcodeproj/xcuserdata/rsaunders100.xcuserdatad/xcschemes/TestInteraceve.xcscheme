@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1261ECCB18DF96F0002E7575"
                BuildableName = "TestInteraceve.app"
-               BlueprintName = "TestInteraceve"
-               ReferencedContainer = "container:TestInteraceve.xcodeproj">
+               BlueprintName = "TestInteraceveTransitions"
+               ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1261ECEF18DF96F0002E7575"
                BuildableName = "TestInteraceveTests.xctest"
-               BlueprintName = "TestInteraceveTests"
-               ReferencedContainer = "container:TestInteraceve.xcodeproj">
+               BlueprintName = "TestInteraceveTransitionsTests"
+               ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1261ECCB18DF96F0002E7575"
             BuildableName = "TestInteraceve.app"
-            BlueprintName = "TestInteraceve"
-            ReferencedContainer = "container:TestInteraceve.xcodeproj">
+            BlueprintName = "TestInteraceveTransitions"
+            ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1261ECCB18DF96F0002E7575"
             BuildableName = "TestInteraceve.app"
-            BlueprintName = "TestInteraceve"
-            ReferencedContainer = "container:TestInteraceve.xcodeproj">
+            BlueprintName = "TestInteraceveTransitions"
+            ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1261ECCB18DF96F0002E7575"
             BuildableName = "TestInteraceve.app"
-            BlueprintName = "TestInteraceve"
-            ReferencedContainer = "container:TestInteraceve.xcodeproj">
+            BlueprintName = "TestInteraceveTransitions"
+            ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

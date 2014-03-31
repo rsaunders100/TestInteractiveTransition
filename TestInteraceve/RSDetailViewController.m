@@ -28,8 +28,6 @@
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
-
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
@@ -38,14 +36,49 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
     [self configureView];
 }
 
-- (void)didReceiveMemoryWarning
+
+
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewWillAppear:animated];
+
+//    id<UIViewControllerTransitionCoordinator> coordinator = self.transitionCoordinator;
+//    
+//    if (![coordinator isCancelled])
+//    {
+//        self.detailDescriptionLabel.alpha = 0.0;
+//        
+//        [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+//            
+//            self.detailDescriptionLabel.alpha = 1.0;
+//            
+//        } completion:nil];
+//    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+//    id<UIViewControllerTransitionCoordinator> coordinator = self.transitionCoordinator;
+//    
+//    if (![coordinator isCancelled])
+//    {
+//        self.detailDescriptionLabel.alpha = 1.0;
+//        [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+//            
+//            self.detailDescriptionLabel.alpha = 0.0;
+//            
+//        } completion:nil];
+//    }
 }
 
 @end
+
+
+
+

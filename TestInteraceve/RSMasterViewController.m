@@ -10,9 +10,14 @@
 
 #import "RSDetailViewController.h"
 
+#import "RSTransitionController.h"
+
+
 @interface RSMasterViewController () {
     NSMutableArray *_objects;
 }
+@property (nonatomic, strong) RSTransitionController * transitionController;
+
 @end
 
 @implementation RSMasterViewController
@@ -30,7 +35,10 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -85,28 +93,19 @@
     }
 }
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        
+        RSDetailViewController * detailViewController = [segue destinationViewController];
+        
+        detailViewController.view.backgroundColor = [UIColor redColor];
+        [detailViewController setDetailItem:object];
+        
+        self.transitionController = [[RSTransitionController alloc] initWithParentNavigationController:self.navigationController];
+        self.navigationController.delegate = self.transitionController;
     }
 }
 
