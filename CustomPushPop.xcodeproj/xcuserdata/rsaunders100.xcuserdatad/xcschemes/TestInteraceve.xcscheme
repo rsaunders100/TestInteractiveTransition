@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1261ECCB18DF96F0002E7575"
-               BuildableName = "TestInteraceve.app"
-               BlueprintName = "TestInteraceveTransitions"
-               ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
+               BuildableName = "TestInteraceveTransitions.app"
+               BlueprintName = "CustomPushPop"
+               ReferencedContainer = "container:CustomPushPop.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1261ECEF18DF96F0002E7575"
-               BuildableName = "TestInteraceveTests.xctest"
-               BlueprintName = "TestInteraceveTransitionsTests"
-               ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
+               BuildableName = "TestInteraceveTransitionsTests.xctest"
+               BlueprintName = "CustomPushPopTests"
+               ReferencedContainer = "container:CustomPushPop.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1261ECCB18DF96F0002E7575"
-            BuildableName = "TestInteraceve.app"
-            BlueprintName = "TestInteraceveTransitions"
-            ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
+            BuildableName = "TestInteraceveTransitions.app"
+            BlueprintName = "CustomPushPop"
+            ReferencedContainer = "container:CustomPushPop.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1261ECCB18DF96F0002E7575"
-            BuildableName = "TestInteraceve.app"
-            BlueprintName = "TestInteraceveTransitions"
-            ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
+            BuildableName = "TestInteraceveTransitions.app"
+            BlueprintName = "CustomPushPop"
+            ReferencedContainer = "container:CustomPushPop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1261ECCB18DF96F0002E7575"
-            BuildableName = "TestInteraceve.app"
-            BlueprintName = "TestInteraceveTransitions"
-            ReferencedContainer = "container:TestInteraceveTransitions.xcodeproj">
+            BuildableName = "TestInteraceveTransitions.app"
+            BlueprintName = "CustomPushPop"
+            ReferencedContainer = "container:CustomPushPop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

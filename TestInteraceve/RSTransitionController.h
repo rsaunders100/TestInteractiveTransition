@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RSTransitionController : UIPercentDrivenInteractiveTransition <UINavigationControllerDelegate>
+@interface RSTransitionController : NSObject <UINavigationControllerDelegate>
 
 - (id)initWithParentNavigationController:(UINavigationController *)parentNavigationController;
 

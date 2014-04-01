@@ -46,35 +46,35 @@
 {
     [super viewWillAppear:animated];
 
-//    id<UIViewControllerTransitionCoordinator> coordinator = self.transitionCoordinator;
-//    
-//    if (![coordinator isCancelled])
-//    {
-//        self.detailDescriptionLabel.alpha = 0.0;
-//        
-//        [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-//            
-//            self.detailDescriptionLabel.alpha = 1.0;
-//            
-//        } completion:nil];
-//    }
+    id<UIViewControllerTransitionCoordinator> coordinator = self.transitionCoordinator;
+    
+    if (![coordinator isCancelled])
+    {
+        self.detailDescriptionLabel.alpha = 0.0;
+        
+        [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+            
+            self.detailDescriptionLabel.alpha = 1.0;
+            
+        } completion:nil];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     
-//    id<UIViewControllerTransitionCoordinator> coordinator = self.transitionCoordinator;
-//    
-//    if (![coordinator isCancelled])
-//    {
-//        self.detailDescriptionLabel.alpha = 1.0;
-//        [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-//            
-//            self.detailDescriptionLabel.alpha = 0.0;
-//            
-//        } completion:nil];
-//    }
+    id<UIViewControllerTransitionCoordinator> coordinator = self.transitionCoordinator;
+    
+    if (![coordinator isCancelled])
+    {
+        self.detailDescriptionLabel.alpha = 1.0;
+        [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+            
+            self.detailDescriptionLabel.alpha = 0.0;
+            
+        } completion:nil];
+    }
 }
 
 @end

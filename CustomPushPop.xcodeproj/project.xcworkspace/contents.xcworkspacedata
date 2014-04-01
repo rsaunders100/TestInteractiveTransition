@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TestInteraceveTransitions.xcodeproj">
+      location = "self:CustomPushPop.xcodeproj">
    </FileRef>
 </Workspace>

@@ -8,14 +8,15 @@
 
 #import "RSTransitionController.h"
 
-const static NSTimeInterval RSTransitionVendorAnimationDuration = 1.0;
+const static NSTimeInterval RSTransitionVendorAnimationDuration = 0.7;
 
-@interface RSTransitionController ()  <UIViewControllerAnimatedTransitioning> // UIViewControllerInteractiveTransitioning
+@interface RSTransitionController ()  <UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic) BOOL isInteractive;
 
 @property (nonatomic) UINavigationControllerOperation opperation;
 @property (nonatomic) UINavigationController * parentNavigationController;
+@property (nonatomic) UIPercentDrivenInteractiveTransition * percentDrivenInteractiveTransition;
 
 @end
 
@@ -42,8 +43,12 @@ const static NSTimeInterval RSTransitionVendorAnimationDuration = 1.0;
         edgePanGR.maximumNumberOfTouches = 1;
         [_parentNavigationController.view addGestureRecognizer:edgePanGR];
         
-        self.completionSpeed = RSTransitionVendorAnimationDuration;
-        self.completionCurve = UIViewAnimationCurveLinear;
+        UIPercentDrivenInteractiveTransition * interactiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+        
+        interactiveTransition.completionCurve = UIViewAnimationCurveLinear;
+        interactiveTransition.completionSpeed = 0.99;
+        
+        self.percentDrivenInteractiveTransition = interactiveTransition;
     }
     return self;
 }
@@ -57,7 +62,7 @@ const static NSTimeInterval RSTransitionVendorAnimationDuration = 1.0;
         return nil;
     }
 
-    return self;
+    return self.percentDrivenInteractiveTransition;
 }
 
 
@@ -96,7 +101,7 @@ const static NSTimeInterval RSTransitionVendorAnimationDuration = 1.0;
             CGFloat percentagePanned = distanceMovedAcross / totalViewWidth;
             if (percentagePanned < 0) percentagePanned = 0;
             
-            [self updateInteractiveTransition:percentagePanned];
+            [self.percentDrivenInteractiveTransition updateInteractiveTransition:percentagePanned];
             break;
         }
             
@@ -113,11 +118,11 @@ const static NSTimeInterval RSTransitionVendorAnimationDuration = 1.0;
             if ([edgePanGestureRecognizer state] != UIGestureRecognizerStateCancelled &&
                 projectedXPositionAfterShortTime >= totalViewWidth / 2)
             {
-                [self finishInteractiveTransition];
+                [self.percentDrivenInteractiveTransition finishInteractiveTransition];
             }
             else
             {
-                [self cancelInteractiveTransition];
+                [self.percentDrivenInteractiveTransition cancelInteractiveTransition];
             }
             
             self.isInteractive = NO;
@@ -128,8 +133,6 @@ const static NSTimeInterval RSTransitionVendorAnimationDuration = 1.0;
             break;
     }
 }
-
-
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
@@ -177,7 +180,7 @@ const static NSTimeInterval RSTransitionVendorAnimationDuration = 1.0;
         fromViewController.view.frame = finalFromViewControllerFrame;
     } completion:^(BOOL finished) {
         
-        [transitionContext completeTransition:YES];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
     }];
 }
 

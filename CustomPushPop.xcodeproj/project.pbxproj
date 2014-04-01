@@ -38,14 +38,14 @@
 /* Begin PBXFileReference section */
 		1241D50218E875CD003AC391 /* RSTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTransitionController.h; sourceTree = "<group>"; };
 		1241D50318E875CD003AC391 /* RSTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTransitionController.m; sourceTree = "<group>"; };
-		1261ECCC18DF96F0002E7575 /* TestInteraceveTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestInteraceveTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1261ECCC18DF96F0002E7575 /* CustomPushPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPushPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1261ECCF18DF96F0002E7575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1261ECD118DF96F0002E7575 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1261ECD318DF96F0002E7575 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1261ECD718DF96F0002E7575 /* TestInteraceveTransitions-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestInteraceveTransitions-Info.plist"; sourceTree = "<group>"; };
+		1261ECD718DF96F0002E7575 /* CustomPushPop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomPushPop-Info.plist"; sourceTree = "<group>"; };
 		1261ECD918DF96F0002E7575 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1261ECDB18DF96F0002E7575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1261ECDD18DF96F0002E7575 /* TestInteraceveTransitions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestInteraceveTransitions-Prefix.pch"; sourceTree = "<group>"; };
+		1261ECDD18DF96F0002E7575 /* CustomPushPop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomPushPop-Prefix.pch"; sourceTree = "<group>"; };
 		1261ECDE18DF96F0002E7575 /* RSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAppDelegate.h; sourceTree = "<group>"; };
 		1261ECDF18DF96F0002E7575 /* RSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAppDelegate.m; sourceTree = "<group>"; };
 		1261ECE218DF96F0002E7575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		1261ECE718DF96F0002E7575 /* RSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSDetailViewController.h; sourceTree = "<group>"; };
 		1261ECE818DF96F0002E7575 /* RSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSDetailViewController.m; sourceTree = "<group>"; };
 		1261ECEA18DF96F0002E7575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1261ECF018DF96F0002E7575 /* TestInteraceveTransitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestInteraceveTransitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1261ECF018DF96F0002E7575 /* CustomPushPopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPushPopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1261ECF118DF96F0002E7575 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1261ECF918DF96F0002E7575 /* TestInteraceveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestInteraceveTests-Info.plist"; sourceTree = "<group>"; };
 		1261ECFB18DF96F0002E7575 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 		1261ECCD18DF96F0002E7575 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1261ECCC18DF96F0002E7575 /* TestInteraceveTransitions.app */,
-				1261ECF018DF96F0002E7575 /* TestInteraceveTransitionsTests.xctest */,
+				1261ECCC18DF96F0002E7575 /* CustomPushPop.app */,
+				1261ECF018DF96F0002E7575 /* CustomPushPopTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,10 +136,10 @@
 		1261ECD618DF96F0002E7575 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1261ECD718DF96F0002E7575 /* TestInteraceveTransitions-Info.plist */,
+				1261ECD718DF96F0002E7575 /* CustomPushPop-Info.plist */,
 				1261ECD818DF96F0002E7575 /* InfoPlist.strings */,
 				1261ECDB18DF96F0002E7575 /* main.m */,
-				1261ECDD18DF96F0002E7575 /* TestInteraceveTransitions-Prefix.pch */,
+				1261ECDD18DF96F0002E7575 /* CustomPushPop-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1261ECCB18DF96F0002E7575 /* TestInteraceveTransitions */ = {
+		1261ECCB18DF96F0002E7575 /* CustomPushPop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1261ED0118DF96F0002E7575 /* Build configuration list for PBXNativeTarget "TestInteraceveTransitions" */;
+			buildConfigurationList = 1261ED0118DF96F0002E7575 /* Build configuration list for PBXNativeTarget "CustomPushPop" */;
 			buildPhases = (
 				1261ECC818DF96F0002E7575 /* Sources */,
 				1261ECC918DF96F0002E7575 /* Frameworks */,
@@ -177,14 +177,14 @@
 			);
 			dependencies = (
 			);
-			name = TestInteraceveTransitions;
+			name = CustomPushPop;
 			productName = TestInteraceve;
-			productReference = 1261ECCC18DF96F0002E7575 /* TestInteraceveTransitions.app */;
+			productReference = 1261ECCC18DF96F0002E7575 /* CustomPushPop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1261ECEF18DF96F0002E7575 /* TestInteraceveTransitionsTests */ = {
+		1261ECEF18DF96F0002E7575 /* CustomPushPopTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1261ED0418DF96F0002E7575 /* Build configuration list for PBXNativeTarget "TestInteraceveTransitionsTests" */;
+			buildConfigurationList = 1261ED0418DF96F0002E7575 /* Build configuration list for PBXNativeTarget "CustomPushPopTests" */;
 			buildPhases = (
 				1261ECEC18DF96F0002E7575 /* Sources */,
 				1261ECED18DF96F0002E7575 /* Frameworks */,
@@ -195,9 +195,9 @@
 			dependencies = (
 				1261ECF618DF96F0002E7575 /* PBXTargetDependency */,
 			);
-			name = TestInteraceveTransitionsTests;
+			name = CustomPushPopTests;
 			productName = TestInteraceveTests;
-			productReference = 1261ECF018DF96F0002E7575 /* TestInteraceveTransitionsTests.xctest */;
+			productReference = 1261ECF018DF96F0002E7575 /* CustomPushPopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1261ECC718DF96F0002E7575 /* Build configuration list for PBXProject "TestInteraceveTransitions" */;
+			buildConfigurationList = 1261ECC718DF96F0002E7575 /* Build configuration list for PBXProject "CustomPushPop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,8 +228,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1261ECCB18DF96F0002E7575 /* TestInteraceveTransitions */,
-				1261ECEF18DF96F0002E7575 /* TestInteraceveTransitionsTests */,
+				1261ECCB18DF96F0002E7575 /* CustomPushPop */,
+				1261ECEF18DF96F0002E7575 /* CustomPushPopTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,7 +281,7 @@
 /* Begin PBXTargetDependency section */
 		1261ECF618DF96F0002E7575 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1261ECCB18DF96F0002E7575 /* TestInteraceveTransitions */;
+			target = 1261ECCB18DF96F0002E7575 /* CustomPushPop */;
 			targetProxy = 1261ECF518DF96F0002E7575 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -392,9 +392,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestInteraceve/TestInteraceveTransitions-Prefix.pch";
-				INFOPLIST_FILE = "TestInteraceve/TestInteraceveTransitions-Info.plist";
-				PRODUCT_NAME = TestInteraceveTransitions;
+				GCC_PREFIX_HEADER = "TestInteraceve/CustomPushPop-Prefix.pch";
+				INFOPLIST_FILE = "TestInteraceve/CustomPushPop-Info.plist";
+				PRODUCT_NAME = CustomPushPop;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,9 +405,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestInteraceve/TestInteraceveTransitions-Prefix.pch";
-				INFOPLIST_FILE = "TestInteraceve/TestInteraceveTransitions-Info.plist";
-				PRODUCT_NAME = TestInteraceveTransitions;
+				GCC_PREFIX_HEADER = "TestInteraceve/CustomPushPop-Prefix.pch";
+				INFOPLIST_FILE = "TestInteraceve/CustomPushPop-Info.plist";
+				PRODUCT_NAME = CustomPushPop;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -429,7 +429,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TestInteraceveTests/TestInteraceveTests-Info.plist";
-				PRODUCT_NAME = TestInteraceveTransitionsTests;
+				PRODUCT_NAME = CustomPushPopTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -448,7 +448,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestInteraceve/TestInteraceve-Prefix.pch";
 				INFOPLIST_FILE = "TestInteraceveTests/TestInteraceveTests-Info.plist";
-				PRODUCT_NAME = TestInteraceveTransitionsTests;
+				PRODUCT_NAME = CustomPushPopTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -457,7 +457,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1261ECC718DF96F0002E7575 /* Build configuration list for PBXProject "TestInteraceveTransitions" */ = {
+		1261ECC718DF96F0002E7575 /* Build configuration list for PBXProject "CustomPushPop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1261ECFF18DF96F0002E7575 /* Debug */,
@@ -466,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1261ED0118DF96F0002E7575 /* Build configuration list for PBXNativeTarget "TestInteraceveTransitions" */ = {
+		1261ED0118DF96F0002E7575 /* Build configuration list for PBXNativeTarget "CustomPushPop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1261ED0218DF96F0002E7575 /* Debug */,
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1261ED0418DF96F0002E7575 /* Build configuration list for PBXNativeTarget "TestInteraceveTransitionsTests" */ = {
+		1261ED0418DF96F0002E7575 /* Build configuration list for PBXNativeTarget "CustomPushPopTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1261ED0518DF96F0002E7575 /* Debug */,
