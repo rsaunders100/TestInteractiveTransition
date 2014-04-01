@@ -152,15 +152,17 @@ const static NSTimeInterval RSTransitionVendorAnimationDuration = 0.7;
     CGFloat toViewStartX;
     CGFloat fromViewEndX;
     
+    CGFloat width = self.parentNavigationController.view.bounds.size.width;
+    
     if (self.opperation == UINavigationControllerOperationPush)
     {
-        toViewStartX = 320;
-        fromViewEndX = -320;
+        toViewStartX = width;
+        fromViewEndX = -width;
     }
     else
     {
-        toViewStartX = -320;
-        fromViewEndX = 320;
+        toViewStartX = -width;
+        fromViewEndX = width;
     }
     
     CGRect finalFromViewControllerFrame = CGRectMake(fromViewEndX, 0,
